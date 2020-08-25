@@ -108,11 +108,7 @@ function init() {
     document.querySelector('.player-0-panel').classList.add('active');
 }
 
-// dice = Math.floor(Math.random() * 6) + 1;
-//  = dice;
-// document.querySelector('#current-' + activePlayer).innerHTML = '<em>' + dice + '</em>'
-// var x = document.querySelector('#score-0').textContent;
-// console.log(x);
+
 
 
 
