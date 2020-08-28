@@ -125,3 +125,25 @@ Change the game to follow these rules:
 3. Add another dice to the game, so that there are two dices now. The player looses his current score when one of them is a 1. (HintL you will need CSS to position the second dice, so take a look at the CSS code for the first one.)
 */
 
+/*
+GAME RULES:
+
+- The game has 2 players, playing in rounds
+- In each turn, a player rolls a dice as many times as he wishes. Each result gets added to his ROUND score
+- BUT, if the player rolls a 1, all his ROUND score gets lost. After that, it's the next player's turn that, it's the next player's turn
+- The first player to reach 100 points on GLOBAL score wins the game
+
+*/
+
+var scores, roundScore, activePlayer, dice;
+
+scores = [0,0];
+roundScore = 0;
+activePlayer = 0;
+
+dice = Math.floor(Math.random() * 6) + 1;
+console.log(dice);
+
+//document.querySelector('#current-' + activePlayer).textContent = dice;
+
+document.querySelector('#current-' + activePlayer).textContent = '<em>' + dice + '</em>';
